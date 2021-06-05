@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+    <h2>
+        <ul>
+            {% for user in users %}
+                {% if user != 'Fernando' %}
+                    <li>{{ user }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </h2>
+</body>
+</html>
